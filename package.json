@@ -1,0 +1,30 @@
+{
+  "name": "yl-response",
+  "version": "1.0.0",
+  "description": "A front end smoothing response solution based on REM.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuri2peter/yl-response.git"
+  },
+  "keywords": [
+    "yuri2",
+    "response",
+    "rem"
+  ],
+  "author": "yuri2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuri2peter/yl-response/issues"
+  },
+  "homepage": "https://github.com/yuri2peter/yl-response#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}

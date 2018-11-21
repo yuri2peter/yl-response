@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="a b c" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="../lib/index.js"></script>
+  <style>
+    body {
+      font-size: 16px;
+    }
+    #box1 {
+      width: 6rem;
+      height: 3rem;
+      border: 1px solid gray;
+      margin: 0.2rem;
+      background-color: beige;
+    }
+    html.phone #box1 {background-color: #48ffff;}
+    html.pad #box1 {background-color: #ff7f7f;}
+    html.pc #box1 {background-color: #c9ff7b;}
+    html.high #box1 {background-color: #ffeb80;}
+    html.lg #box1 {background-color: #ac6fd3;}
+  </style>
+</head>
+<body>
+<script>
+  const params = [
+    'phone', // <400 区间类名为 phone
+    [400, 80], // 400px的屏幕rem为 80px
+    'pad', // 400-860 区间类名为 pad
+    [860, 60],
+    'pc',
+    [1440, 80],
+    'high',
+    [1920, 100],
+    'lg', // >1440 区间类名为 lg
+  ];
+  const watcher = ylResponsive(params, {
+    monitor: true,
+    watchDebounce: 1,
+  });
+  window.onresize = watcher;
+</script>
+<div id="box1">
+  <pre>
+    #box1 {
+      width: 6rem;
+      height: 3rem;
+      border: 1px solid gray;
+      margin: 0.2rem;
+      background-color: beige;
+    }
+  </pre>
+</div>
+</body>
+</html>
