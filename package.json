@@ -1,6 +1,6 @@
 {
   "name": "yl-response",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A front end smoothing response solution based on REM.",
   "main": "./lib/index.js",
   "scripts": {
