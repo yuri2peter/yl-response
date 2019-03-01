@@ -33,6 +33,7 @@
       monitor: false,
       watch: false,
       watchDebounce: 20,
+      onChange: () => {},
       ...options,
     };
     // 准备数据
@@ -163,11 +164,15 @@
         draw();
       }
       const currentPart = findPart(windowWidth);
-      return {
+      const result = {
         width: windowWidth,
         rem,
         part: currentPart,
+      };
+      if (opt.onChange) {
+        opt.onChange(result);
       }
+      return result;
     };
 
     // 设置一次
