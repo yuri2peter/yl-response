@@ -41,7 +41,7 @@
     const minWidth = points[0][0];
     const minWidthFixed = 0.5 * minWidth;
     const maxWidth = points[points.length - 1][0];
-    const maxWidthFixed = maxWidth - 0.5 * minWidth;
+    const maxWidthFixed = maxWidth * 1.05;
     const minRem = Math.min(...points.map(t => t[1]));
     const maxRem = Math.max(...points.map(t => t[1]));
     points.push([99999, points[points.length - 1][1]]);
@@ -130,7 +130,7 @@
         y: canvas.height - coordinateTrans(currentRem, [minRem, maxRem], [12, canvas.height - 12]),
       };
       ctx.fillRect(currentPoint.x - 3, currentPoint.y -3 , 6, 6);
-      ctx.fillText(`(${windowWidth}, ${currentRem.toFixed(2)})`, currentPoint.x - 12, currentPoint.y - 12);
+      ctx.fillText(`(${windowWidth}, ${currentRem.toFixed(2)})`, canvas.width / 2 - 24, 12);
 
       // 绘制极值文字
       ctx.fillStyle="#d510ff";
