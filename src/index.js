@@ -30,12 +30,17 @@
    */
   function responsive(params, options) {
     const opt = {
+      bodyFontSize: 16,
       monitor: false,
       watch: false,
       watchDebounce: 20,
       onChange: () => {},
       ...options,
     };
+
+    // 设置body字号
+    document.body.style.fontSize = typeof opt.bodyFontSize === 'number' ? opt.bodyFontSize + 'px' : opt.bodyFontSize;
+
     // 准备数据
     const points = params.filter(Array.isArray);
     const stageNames = params.filter(t => typeof t === 'string');

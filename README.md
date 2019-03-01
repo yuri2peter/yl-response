@@ -103,6 +103,7 @@ For example:
 |   watch   |   Enable monitoring of screen size changes. If false, you need to monitor by yourself(use `watcher`).   |   false   |
 |   watchDebounce   |   debounce idle of `watch`(unit: ms).   |   20   |
 |   onChange   |   callback when screen size changed   |   -   |
+|   bodyFontSize   |   set body font size   |   '16px'   |
 
 ### @return function watcher
 
