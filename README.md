@@ -54,15 +54,17 @@ const ylResponsive = require('yl-response');
 
 ```javascript
 const watcher = ylResponsive([
+  'xs',
+  [768, 40],
   'sm',
-  [960, 40],
+  [992, 70],
   'md',
-  [1440, 70],
+  [1440, 100],
   'lg',
-  [1920, 100],
+  [1920, 150],
   'xl',
 ], {
-  demo: true,
+  monitor: true,
   watch: true,
   watchDebounce: 10,
 });
