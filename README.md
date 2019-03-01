@@ -38,22 +38,22 @@ Using this tool, we can ensure that this change is smooth.
 # Import
 
 ### Webpack
-`npm i yl-responsive`
+`npm i yl-response`
 ```javascript
-const ylResponsive = require('yl-response');
+const ylResponse = require('yl-response');
 ```
 ### Html
 ```html
 <script src="./lib/index.js"></script>
 <script>
-  var ylResponsive = window.ylResponsive;
+  var ylResponse = window.ylResponse;
 </script>
 ```
 
 # How to Use
 
 ```javascript
-const watcher = ylResponsive([
+const watcher = ylResponse([
   'xs',
   [768, 40],
   'sm',

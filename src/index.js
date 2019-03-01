@@ -232,8 +232,8 @@
   try {
     module.exports = responsive;
   } catch (e) {
-    if (window.ylResponsive === undefined) {
-      window.ylResponsive = responsive;
+    if (window.ylResponse === undefined) {
+      window.ylResponse = responsive;
     }
   }
 })();
