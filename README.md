@@ -40,7 +40,7 @@ Using this tool, we can ensure that this change is smooth.
 ### Webpack
 `npm i yl-responsive`
 ```javascript
-const ylResponsive = require('yl-responsive');
+const ylResponsive = require('yl-response');
 ```
 ### Html
 ```html
