@@ -40,7 +40,7 @@
     const points = params.filter(Array.isArray);
     const stageNames = params.filter(t => typeof t === 'string');
     const minWidth = points[0][0];
-    const minWidthFixed = 0.5 * minWidth;
+    const minWidthFixed = 0.8 * minWidth;
     const maxWidth = points[points.length - 1][0];
     const maxWidthFixed = maxWidth * 1.05;
     const minRem = Math.min(...points.map(t => t[1]));
